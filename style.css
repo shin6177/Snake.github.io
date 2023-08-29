@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+.body{
+ background: url('./img/bg.jpg');
+ min-height: 100vh;
+ background-size: 100vw 100vh;
+ background-repeat: no-repeat;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+}
+#scoreBox{
+    position: absolute;
+     top: 1rem;
+     right: 20rem;
+     font-size: 3rem;
+     /* font-weight: bold; */
+     font-family: 'Sedgwick Ave Display', cursive;
+}
+#HiscoreBox{
+    position: absolute;
+    top: 5rem;
+    right: 20rem;
+    font-size: 3rem;
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+#board{
+    background: linear-gradient(rgb(114, 168, 114), rgb(175, 175, 105));
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr) ;
+    grid-template-columns: repeat(18, 1fr) ;
+}
+.head{
+    background-image: url(https://ih1.redbubble.net/image.785223913.8167/st,small,507x507-pad,600x600,f8f8f8.jpg);
+      background-position: center;
+      background-size: cover;
+    border: 2px solid purple;
+    transform: scale(1.02);
+    border-radius: 9px;
+}
+.food{
+    background: linear-gradient(red, purple);
+    border: .25vmin solid black;
+    border-radius: 8px;
+
+}
+.snake{
+    background-color: purple;
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+
+@media (max-width:   1000px) {
+    .body{
+         flex-direction: column;
+    }
+}
